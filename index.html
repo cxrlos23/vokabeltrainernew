@@ -25,7 +25,7 @@
     .divider{height:1px;background:var(--border);margin:18px 0}.footer-note{margin-top:18px;font-size:13px;color:var(--muted)} .tag{font-size:12px;color:#d9dcff;background:rgba(124,156,255,.15);border:1px solid rgba(124,156,255,.25);padding:4px 8px;border-radius:999px}
     .sentence-bank button{background:rgba(255,255,255,.06);border:1px solid var(--border);box-shadow:none;font-weight:600}.bar-labels{display:flex;justify-content:space-between;margin-top:8px;font-size:12px;color:var(--muted)}
     .mini-card{background:#0d1020;padding:14px;border-radius:16px;border:1px solid var(--border)} .opt-grid{display:grid;gap:10px} .quiz-topbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:12px}
-    .quiz-type{font-size:12px;color:var(--muted);margin-top:2px}.checkbox-row{display:block;background:#0d1020;padding:12px;border-radius:12px;border:1px solid var(--border)} .pill-btn{background:rgba(255,255,255,.06)!important;border:1px solid var(--border)!important;box-shadow:none!important}
+    .quiz-type{font-size:12px;color:var(--muted);margin-top:2px}.checkbox-row{display:block;background:#0d1020;padding:12px;border-radius:12px;border:1px solid var(--border)} .pill-btn{background:rgba(255,255,255,.06)!important;border:1px solid var(--border)!important;box-shadow:none!important}.rating-btn{background:rgba(255,255,255,.06)!important;border:1px solid var(--border)!important;box-shadow:none!important}
   </style>
 </head>
 <body>
@@ -40,14 +40,50 @@
 
 <section class="grid cols-2">
 <div class="card"><div class="tabs"><button class="tab active" id="tabTheory" onclick="showPanel('theory', this)">Lernkarten Inhalt</button><button class="tab secondary" id="tabArguments" onclick="showPanel('arguments', this)">Argumente</button><button class="tab secondary" id="tabWriting" onclick="showPanel('writing', this)">Schreibbausteine</button></div>
-<div id="panel-theory"><h2>Inhaltswissen kompakt</h2><div class="divider"></div><h3>1) Situacion actual de los pueblos indigenas</h3><ul class="bullet"><li>Muchos pueblos indigenas siguen viviendo en situaciones dificiles.</li><li>Hay pobreza, discriminacion, racismo y falta de oportunidades.</li><li>Muchas comunidades no tienen el mismo acceso a educacion, salud y participacion politica.</li><li>Su cultura muchas veces no es suficientemente respektiert.</li></ul><h3>2) Los mapuches</h3><ul class="bullet"><li>Son un pueblo indigena de Chile y Argentina.</li><li>La tierra tiene un valor central para su identidad, su historia y su cultura.</li><li>Sus tradiciones, su lengua y su forma de vivir estan muy conectadas con la naturaleza.</li><li>Luchan por sus tierras, sus derechos y el reconocimiento de su cultura.</li></ul><h3>3) El mapudungun</h3><ul class="bullet"><li>Es la lengua tradicional de los mapuches.</li><li>Esta en peligro porque cada vez hay menos hablantes.</li><li>En muchas familias ya no se transmite a las nuevas generaciones.</li><li>La discriminacion y la falta de apoyo institucional agravan el problema.</li></ul><h3>4) Herencia linguistica y cultural</h3><ul class="bullet"><li>Las lenguas indigenas forman parte de la identidad de los pueblos.</li><li>Tambien son una parte importante de la historia y la diversidad cultural de Latinoamerica.</li><li>Sin ellas, Latinoamerica seria menos diversa y perderia una parte de su memoria cultural.</li></ul></div>
+<div id="panel-theory"><h2>Inhaltswissen kompakt</h2><div class="divider"></div><h3>1) Situacion actual de los pueblos indigenas</h3><ul class="bullet"><li>Muchos pueblos indigenas siguen viviendo en situaciones dificiles.</li><li>Hay pobreza, discriminacion, racismo y falta de oportunidades.</li><li>Muchas comunidades no tienen el mismo acceso a educacion, salud y participacion politica.</li><li>Su cultura muchas veces no es suficientemente respetada.</li></ul><h3>2) Los mapuches</h3><ul class="bullet"><li>Son un pueblo indigena de Chile y Argentina.</li><li>La tierra tiene un valor central para su identidad, su historia y su cultura.</li><li>Sus tradiciones, su lengua y su forma de vivir estan muy conectadas con la naturaleza.</li><li>Luchan por sus tierras, sus derechos y el reconocimiento de su cultura.</li></ul><h3>3) El mapudungun</h3><ul class="bullet"><li>Es la lengua tradicional de los mapuches.</li><li>Esta en peligro porque cada vez hay menos hablantes.</li><li>En muchas familias ya no se transmite a las nuevas generaciones.</li><li>La discriminacion y la falta de apoyo institucional agravan el problema.</li></ul><h3>4) Herencia linguistica y cultural</h3><ul class="bullet"><li>Las lenguas indigenas forman parte de la identidad de los pueblos.</li><li>Tambien son una parte importante de la historia y la diversidad cultural de Latinoamerica.</li><li>Sin ellas, Latinoamerica seria menos diversa y perderia una parte de su memoria cultural.</li></ul></div>
 <div id="panel-arguments" class="hidden"><h2>Pro / Contra / Soluciones</h2><div class="divider"></div><h3>Argumentos a favor de conservar las lenguas indigenas</h3><ul class="bullet"><li>conservan la identidad cultural de los pueblos indigenas</li><li>protegen tradiciones, conocimientos y formas de pensar</li><li>son parte de la historia de Latinoamerica</li><li>enriquecen la diversidad linguistica y cultural</li><li>merecen respeto igual que otras lenguas</li></ul><h3>Argumentos en contra o dificultades</h3><ul class="bullet"><li>hay pocos hablantes en algunas lenguas</li><li>muchos dicen que el espanol ya basta para la vida diaria</li><li>la proteccion requiere recursos, tiempo y personal</li><li>algunos consideran la desaparicion de ciertas lenguas un proceso natural</li></ul><h3>Posibles soluciones</h3><ul class="bullet"><li>ensenar las lenguas en las escuelas y universidades</li><li>crear clases bilingues</li><li>usar las lenguas en politica y espacios publicos</li><li>publicar literatura, diccionarios y materiales didacticos</li><li>tomar medidas contra la discriminacion</li><li>dar mas voz a las comunidades indigenas</li></ul></div>
 <div id="panel-writing" class="hidden"><h2>Schreibbausteine fuer die Klausur</h2><div class="divider"></div><h3>Resumen</h3><ul class="bullet"><li>El texto trata de...</li><li>Primero, el autor explica que...</li><li>Ademas, se menciona que...</li><li>Por ultimo, el texto muestra que...</li></ul><h3>Comentario</h3><ul class="bullet"><li>En mi opinion,...</li><li>Me parece importante porque...</li><li>Por un lado..., por otro lado...</li><li>Estoy a favor de... porque...</li><li>En conclusion,...</li></ul><h3>Mediacion</h3><ul class="bullet"><li>El texto dice que...</li><li>Se trata de...</li><li>Lo mas importante es que...</li><li>En general, el texto explica...</li><li>No traduzcas literal: simplifica y explica.</li></ul></div></div>
 <div class="card subtle"><h2>Flashcards</h2><div class="flash" id="flashText">Klicke auf "Start", um zu lernen.</div><p class="small" id="flashHint">Vorderseite/Hinweis erscheint hier.</p><div class="btns"><button onclick="startFlashcards()">Start</button><button class="secondary" onclick="flipFlashcard()">Karte drehen</button><button class="secondary" onclick="nextFlashcard()">Naechste</button></div><div class="divider"></div><div class="flex"><div class="stat"><strong id="flashCount">0</strong><br><span class="small">gesehene Karten</span></div><div class="stat"><strong id="flashKnown">0</strong><br><span class="small">als sicher markiert</span></div></div><div class="btns"><button class="secondary" id="knownBtn" onclick="markKnown()" disabled>Kannte ich</button></div><p class="small">"Kannte ich" geht nur einmal pro Karte und erst, nachdem du zur naechsten Karte gegangen bist.</p></div>
 </section>
 
 <section class="grid cols-2">
-<div class="card"><h2>Vokabeltrainer – Deutsch zu Spanisch</h2><div class="quiz-topbar"><select id="vocabSet" onchange="setVocabSet(this.value)"><option value="essential">Essenzielle Vokabeln</option><option value="extended">Wichtige + mittlere Vokabeln</option></select><select id="vocabMode" onchange="setVocabMode(this.value)"><option value="mc">Multiple Choice</option><option value="typed">Eintippen</option></select></div><div class="mini-card"><p id="vocabPrompt">Vokabel erscheint hier</p><div id="vocabOptions" class="opt-grid"></div><div id="vocabTypedWrap" class="btns hidden"><input type="text" id="vocabInput" placeholder="Schreibe das spanische Wort hier" /><button onclick="checkTypedVocab()">Pruefen</button></div><div id="vocabFeedback" class="feedback"></div></div><div class="btns"><button onclick="nextVocabQuestion()">Naechste Vokabel</button></div><div class="flex"><div class="stat"><strong id="vocabScore">0</strong><br><span class="small">Richtig</span></div><div class="stat"><strong id="vocabIndex">0</strong><br><span class="small">Versuche</span></div><div class="stat"><strong id="vocabAccuracy">0%</strong><br><span class="small">Trefferquote</span></div></div></div>
+<div class="card"><h2>Vokabeltrainer – Deutsch zu Spanisch</h2>
+  <div class="quiz-topbar">
+    <select id="vocabSet" onchange="setVocabSet(this.value)">
+      <option value="essential">Essenzielle Vokabeln</option>
+      <option value="extended">Wichtige + mittlere Vokabeln</option>
+    </select>
+    <select id="vocabMode" onchange="setVocabMode(this.value)">
+      <option value="mc">Multiple Choice</option>
+      <option value="typed">Eintippen</option>
+    </select>
+  </div>
+  <div class="mini-card">
+    <p id="vocabPrompt">Vokabel erscheint hier</p>
+    <div id="vocabOptions" class="opt-grid"></div>
+    <div id="vocabTypedWrap" class="btns hidden">
+      <input type="text" id="vocabInput" placeholder="Schreibe das spanische Wort hier" />
+      <button onclick="checkTypedVocab()">Pruefen</button>
+      <button class="secondary" id="typoBtn" onclick="acceptTypo()" disabled>Verschrieben / gelten lassen</button>
+    </div>
+    <div id="vocabFeedback" class="feedback"></div>
+    <div class="btns" id="vocabRatingWrap">
+      <button class="secondary rating-btn" onclick="rateVocab('sure')" disabled id="rateSure">✅ Sicher</button>
+      <button class="secondary rating-btn" onclick="rateVocab('unsure')" disabled id="rateUnsure">⚠️ Unsicher</button>
+      <button class="secondary rating-btn" onclick="rateVocab('wrong')" disabled id="rateWrong">❌ Falsch</button>
+    </div>
+  </div>
+  <div class="btns">
+    <button onclick="nextVocabQuestion()">Naechste Vokabel</button>
+  </div>
+  <div class="flex">
+    <div class="stat"><strong id="vocabScore">0</strong><br><span class="small">Richtig</span></div>
+    <div class="stat"><strong id="vocabIndex">0</strong><br><span class="small">Versuche</span></div>
+    <div class="stat"><strong id="vocabAccuracy">0%</strong><br><span class="small">Trefferquote</span></div>
+    <div class="stat"><strong id="vocabSeenUnique">0</strong><br><span class="small">gesehen</span></div>
+  </div>
+  <p class="small">Logik: zuerst neue Vokabeln, dann vor allem schwierige. Essenzielle Vokabeln kommen haeufiger, aber erweiterte tauchen zwischendurch auf. Schreibmodus zaehlt staerker als Multiple Choice.</p>
+</div></div>
 <div class="card subtle"><h2>Quiz – Wissen und Argumente</h2><div class="quiz-topbar"><select id="quizTopic" onchange="setQuizTopic(this.value)"><option value="all">Alle Themen</option><option value="mapuches">Mapuches</option><option value="situacion">Aktuelle Situation</option><option value="lenguas">Lenguas indigenas</option><option value="argumentos">Pro / Contra / Soluciones</option><option value="formatos">Comentario / Resumen / Mediacion</option></select><select id="quizAnswerMode" onchange="setQuizAnswerMode(this.value)"><option value="all">Alle Fragetypen</option><option value="single">Antippen</option><option value="multi">Mehrfachauswahl</option><option value="tf">Wahr / Falsch</option><option value="typed">Eintippen</option></select></div><div class="qa"><div><h3 id="qTitle">Frage erscheint hier</h3><div class="quiz-type" id="qMeta">Thema / Fragetyp</div><div id="qOptions" class="opt-grid"></div><div id="quizTypedWrap" class="btns hidden"><input type="text" id="quizTypedInput" placeholder="Schreibe deine Loesung hier" /><button onclick="submitTypedQuiz()">Antwort pruefen</button></div><div id="quizActionBar" class="btns hidden"><button onclick="submitMultiAnswer()">Antwort pruefen</button></div><div id="qFeedback" class="feedback"></div></div><div class="flex"><div class="stat"><strong id="quizScore">0</strong><br><span class="small">Punkte</span></div><div class="stat"><strong id="quizIndex">0</strong><br><span class="small">Fragen geloest</span></div><div class="stat"><strong id="quizStreak">0</strong><br><span class="small">Serie</span></div><div class="stat"><strong id="quizAccuracy">0%</strong><br><span class="small">Trefferquote</span></div></div><div class="btns"><button onclick="loadQuestion()">Naechste Frage</button><button class="secondary" onclick="resetQuiz()">Quiz neu</button></div></div></div>
 </section>
 
@@ -67,12 +103,52 @@
 <script>
 const STORAGE_KEY='spanisch_platform_state_v4';
 const commentTasks=['In einer Schule in Chile wird diskutiert, ob indigene Sprachen wie das mapudungun staerker im Unterricht und im oeffentlichen Leben gefoerdert werden sollen. Schreibe einen comentario, in dem du den Wert der sprachlichen und kulturellen herencia de los pueblos indigenas erklaerst, Vorteile und Schwierigkeiten nennst und deine eigene Meinung begruendest.','Eine Zeitung berichtet, dass viele junge Menschen in Lateinamerika keine indigene Sprache mehr lernen. Nimm in einem comentario Stellung dazu, warum das problematisch ist und was Schulen und Regierungen tun sollten.','In einem Kulturzentrum wird gefragt, ob der Schutz indigener Sprachen wirklich noch wichtig ist, wenn fast alle Menschen Spanisch sprechen. Schreibe einen comentario mit Pro- und Contra-Argumenten und einem klaren Fazit.','In Chile gibt es eine Debatte ueber die Rechte der Mapuches und ueber die Bedeutung ihrer Kultur fuer die Gesellschaft. Schreibe einen comentario, in dem du die aktuelle Situation beschreibst und Vorschlaege fuer eine gerechtere Zukunft machst.'];
-const state={stage:'basics',flashIndex:0,flashFront:true,seenCards:[],knownCards:[],canMarkKnown:false,lastKnownCardIndex:null,quizScore:0,quizIndex:0,quizStreak:0,answeredQuestions:[],currentQuestion:null,currentExam:null,commentChecks:0,mediationChecks:0,examChecks:0,quizTopic:'all',quizAnswerMode:'all',vocabSet:'essential',vocabMode:'mc',vocabScore:0,vocabIndex:0,currentVocab:null};
+const state={stage:'basics',flashIndex:0,flashFront:true,seenCards:[],knownCards:[],canMarkKnown:false,lastKnownCardIndex:null,quizScore:0,quizIndex:0,quizStreak:0,answeredQuestions:[],currentQuestion:null,currentExam:null,commentChecks:0,mediationChecks:0,examChecks:0,quizTopic:'all',quizAnswerMode:'all',vocabSet:'essential',vocabMode:'mc',vocabScore:0,vocabIndex:0,currentVocab:null,vocabSeen:{},vocabStats:{},pendingVocabResult:null};
 const flashcards=[{front:'Los mapuches',back:'Son un pueblo indigena de Chile y Argentina.'},{front:'La tierra',back:'Es central para la identidad, la cultura y la historia de los mapuches.'},{front:'Mapudungun',back:'Es la lengua tradicional de los mapuches; esta en peligro.'},{front:'Problemas actuales',back:'pobreza, discriminacion, racismo, falta de oportunidades.'},{front:'Herencia linguistica',back:'Las lenguas indigenas son parte de la identidad y la historia cultural.'},{front:'Solucion importante',back:'ensenanza bilingue y mas presencia publica de las lenguas.'},{front:'Comentario',back:'Debe incluir opinion, argumentos, ejemplo y conclusion.'},{front:'Mediacion',back:'Hay que explicar y resumir, no traducir palabra por palabra.'},{front:'Discriminacion',back:'Puede afectar la lengua, la cultura, la educacion y la participacion social.'},{front:'Lucha por los derechos',back:'Muchas comunidades luchan por tierras, reconocimiento y respeto.'}];
-const essentialVocab=[['Diskriminierung','la discriminacion'],['Muttersprache','la lengua materna'],['Armut','la pobreza'],['kaempfen fuer','luchar por'],['struktureller Rassismus','el racismo estructural'],['bedroht sein durch','estar amenazado/a por'],['das Verschwinden','la desaparicion'],['der Verlust von','la perdida de'],['die Sprache der Mapuche','el mapudungun'],['die kulturelle Vielfalt','la diversidad cultural'],['die Identitaet','la identidad'],['das Erbe','la herencia'],['Anerkennung','el reconocimiento'],['die Natur','la naturaleza'],['die indigenen Sprachen','las lenguas indigenas'],['diskriminiert werden','ser discriminado/a'],['foerdern','promover'],['bewahren / erhalten','conservar'],['die Erde / das Land','la tierra'],['Mangel an Chancen','la falta de oportunidades']];
-const extendedVocab=essentialVocab.concat([['Demonstration','la manifestacion'],['demonstrieren','protestar'],['traditionelle Kleidung','la vestimenta tradicional'],['Landwirtschaft','la agricultura'],['natuerliche Gueter','los bienes naturales'],['kultureller Druck','la presion cultural'],['Kastilisierung','la castellanizacion'],['staerken','fortalecer'],['Menschenrechtsverletzung','la vulneracion de derechos humanos'],['profitieren von','beneficiarse de'],['Vorfahren','los ancestros'],['Lebensweise','la forma de vivir'],['eine Verbindung haben mit','tener una conexion con'],['einen Bevoelkerungsanteil darstellen','representar un porcentaje de la poblacion'],['fuehren zu','llevar a'],['leiden unter','sufrir de'],['Herausforderung','el desafio'],['Menschen der Erde','la gente de la tierra']]);
+const essentialVocab=[
+{id:'disc',de:'Diskriminierung',es:'la discriminacion',tier:'essential'},
+{id:'lm',de:'Muttersprache',es:'la lengua materna',tier:'essential'},
+{id:'armut',de:'Armut',es:'la pobreza',tier:'essential'},
+{id:'kampf',de:'kaempfen fuer',es:'luchar por',tier:'essential'},
+{id:'racismo',de:'struktureller Rassismus',es:'el racismo estructural',tier:'essential'},
+{id:'bedroht',de:'bedroht sein durch',es:'estar amenazado/a por',tier:'essential'},
+{id:'verschwinden',de:'das Verschwinden',es:'la desaparicion',tier:'essential'},
+{id:'verlust',de:'der Verlust von',es:'la perdida de',tier:'essential'},
+{id:'mapudungun',de:'die Sprache der Mapuche',es:'el mapudungun',tier:'essential'},
+{id:'vielfalt',de:'die kulturelle Vielfalt',es:'la diversidad cultural',tier:'essential'},
+{id:'identitaet',de:'die Identitaet',es:'la identidad',tier:'essential'},
+{id:'erbe',de:'das Erbe',es:'la herencia',tier:'essential'},
+{id:'anerkennung',de:'Anerkennung',es:'el reconocimiento',tier:'essential'},
+{id:'natur',de:'die Natur',es:'la naturaleza',tier:'essential'},
+{id:'sprachen',de:'die indigenen Sprachen',es:'las lenguas indigenas',tier:'essential'},
+{id:'diskriminiert',de:'diskriminiert werden',es:'ser discriminado/a',tier:'essential'},
+{id:'foerdern',de:'foerdern',es:'promover',tier:'essential'},
+{id:'bewahren',de:'bewahren / erhalten',es:'conservar',tier:'essential'},
+{id:'erde',de:'die Erde / das Land',es:'la tierra',tier:'essential'},
+{id:'chancen',de:'Mangel an Chancen',es:'la falta de oportunidades',tier:'essential'}
+];
+const extendedVocab=essentialVocab.concat([
+{id:'demo',de:'Demonstration',es:'la manifestacion',tier:'extended'},
+{id:'demonstrieren',de:'demonstrieren',es:'protestar',tier:'extended'},
+{id:'kleidung',de:'traditionelle Kleidung',es:'la vestimenta tradicional',tier:'extended'},
+{id:'landwirtschaft',de:'Landwirtschaft',es:'la agricultura',tier:'extended'},
+{id:'gueter',de:'natuerliche Gueter',es:'los bienes naturales',tier:'extended'},
+{id:'druck',de:'kultureller Druck',es:'la presion cultural',tier:'extended'},
+{id:'kastili',de:'Kastilisierung',es:'la castellanizacion',tier:'extended'},
+{id:'staerken',de:'staerken',es:'fortalecer',tier:'extended'},
+{id:'menschenrechte',de:'Menschenrechtsverletzung',es:'la vulneracion de derechos humanos',tier:'extended'},
+{id:'profitieren',de:'profitieren von',es:'beneficiarse de',tier:'extended'},
+{id:'vorfahren',de:'Vorfahren',es:'los ancestros',tier:'extended'},
+{id:'lebensweise',de:'Lebensweise',es:'la forma de vivir',tier:'extended'},
+{id:'verbindung',de:'eine Verbindung haben mit',es:'tener una conexion con',tier:'extended'},
+{id:'bevoelkerung',de:'einen Bevoelkerungsanteil darstellen',es:'representar un porcentaje de la poblacion',tier:'extended'},
+{id:'fuehren',de:'fuehren zu',es:'llevar a',tier:'extended'},
+{id:'leiden',de:'leiden unter',es:'sufrir de',tier:'extended'},
+{id:'herausforderung',de:'Herausforderung',es:'el desafio',tier:'extended'},
+{id:'gente',de:'Menschen der Erde',es:'la gente de la tierra',tier:'extended'}
+]);
 const quizQuestions=[{topic:'mapuches',type:'single',q:'Los mapuches son...',options:['un pueblo indigena de Chile y Argentina','una lengua antigua de Mexico','un grupo politico moderno'],correct:0,explain:'Correcto: los mapuches son un pueblo indigena que vive sobre todo en Chile y tambien en Argentina.'},{topic:'mapuches',type:'single',q:'La tierra es importante para los mapuches porque...',options:['solo es importante para la economia','forma parte de su identidad, cultura e historia','no tiene una funcion especial'],correct:1,explain:'Correcto: la tierra esta unida a la identidad mapuche.'},{topic:'mapuches',type:'single',q:'El mapudungun es...',options:['una fiesta tradicional','la lengua de los mapuches','una ley chilena'],correct:1,explain:'Correcto: es la lengua tradicional de los mapuches.'},{topic:'mapuches',type:'single',q:'Los mapuches luchan sobre todo por...',options:['mas turismo','sus tierras y sus derechos','cambiar de pais'],correct:1,explain:'Correcto: la lucha por tierras y derechos es central.'},{topic:'mapuches',type:'single',q:'La vida de muchos mapuches esta conectada con...',options:['la naturaleza','la tecnologia moderna solamente','la vida urbana exclusivamente'],correct:0,explain:'Correcto: la relacion con la naturaleza es un aspecto central.'},{topic:'mapuches',type:'single',q:'Que relacion existe entre tierra e identidad mapuche?',options:['La tierra solo tiene valor economico','La tierra es una parte central de la identidad mapuche','La tierra no tiene valor simbolico'],correct:1,explain:'Correcto: la tierra tiene valor material, historico y simbolico.'},{topic:'mapuches',type:'single',q:'Que problema afecta a la cultura mapuche?',options:['la discriminacion','el exceso de apoyo institucional','la desaparicion del espanol'],correct:0,explain:'Correcto: la discriminacion es uno de los problemas que afectan a la cultura mapuche.'},{topic:'mapuches',type:'single',q:'Que afirmacion describe mejor la situacion de los mapuches hoy?',options:['no tienen problemas importantes','siguen luchando por derechos, reconocimiento y tierras','ya no existen en la actualidad'],correct:1,explain:'Correcto: siguen presentes y luchan por reconocimiento, tierras y derechos.'},{topic:'mapuches',type:'single',q:'La expresion "gente de la tierra" se relaciona con...',options:['el valor espiritual y cultural de la tierra','una campana publicitaria','una teoria economica'],correct:0,explain:'Correcto: la expresion muestra la fuerte union con la tierra.'},{topic:'mapuches',type:'typed',q:'Completa: Los mapuches luchan por sus ______ y derechos.',answers:['tierras','tierra'],explain:'Correcto: la expresion central es "sus tierras y derechos".'},
-{topic:'situacion',type:'single',q:'Un problema actual de muchos pueblos indigenas es...',options:['la discriminacion','demasiado poder politico','demasiada riqueza'],correct:0,explain:'Correcto: la discriminacion es un problema actual muy importante.'},{topic:'situacion',type:'single',q:'Muchos pueblos indigenas sufren...',options:['pobreza','exceso de oportunidades','demasiada representacion'],correct:0,explain:'Correcto: la pobreza es uno de los problemas mas frecuentes.'},{topic:'situacion',type:'single',q:'Muchas comunidades no tienen el mismo acceso a...',options:['educacion y salud','playas turisticas','tecnologia espacial'],correct:0,explain:'Correcto: la desigualdad afecta, entre otras cosas, a educacion y salud.'},{topic:'situacion',type:'single',q:'El racismo estructural significa que...',options:['hay desigualdad profunda en la sociedad','todo el mundo es tratado igual','solo existe en libros'],correct:0,explain:'Correcto: el racismo estructural se ve en la desigualdad persistente.'},{topic:'situacion',type:'single',q:'La falta de oportunidades puede afectar...',options:['la educacion, el trabajo y la participacion social','solo la musica','solo la ropa'],correct:0,explain:'Correcto: la falta de oportunidades afecta a muchas areas de la vida.'},{topic:'situacion',type:'single',q:'Que describe mejor la situacion actual?',options:['todo esta resuelto','hay avances, pero siguen existiendo problemas graves','los pueblos indigenas ya no forman parte de Latinoamerica'],correct:1,explain:'Correcto: hay avances, pero tambien siguen existiendo grandes problemas.'},{topic:'situacion',type:'single',q:'Que areas suelen estar afectadas?',options:['educacion, salud, politica','solo el deporte','solo la literatura'],correct:0,explain:'Correcto: die Ungleichheit affects several areas.'},{topic:'situacion',type:'single',q:'La discriminacion puede ser por...',options:['lengua, tradiciones, forma de vivir','el clima solamente','la musica pop'],correct:0,explain:'Correcto: se discrimina a veces por lengua, cultura y tradiciones.'},{topic:'situacion',type:'multi',q:'Selecciona dos problemas actuales de los pueblos indigenas.',options:['discriminacion','pobreza','demasiada representacion politica','exceso de recursos'],correct:[0,1],explain:'Correcto: discriminacion y pobreza son dos problemas centrales.'},{topic:'situacion',type:'typed',q:'Completa: Muchas comunidades sufren pobreza y ______.',answers:['discriminacion'],explain:'Correcto: una pareja muy frecuente es "pobreza y discriminacion".'},
+{topic:'situacion',type:'single',q:'Un problema actual de muchos pueblos indigenas es...',options:['la discriminacion','demasiado poder politico','demasiada riqueza'],correct:0,explain:'Correcto: la discriminacion es un problema actual muy importante.'},{topic:'situacion',type:'single',q:'Muchos pueblos indigenas sufren...',options:['pobreza','exceso de oportunidades','demasiada representacion'],correct:0,explain:'Correcto: la pobreza es uno de los problemas mas frecuentes.'},{topic:'situacion',type:'single',q:'Muchas comunidades no tienen el mismo acceso a...',options:['educacion y salud','playas turisticas','tecnologia espacial'],correct:0,explain:'Correcto: la desigualdad afecta, entre otras cosas, a educacion y salud.'},{topic:'situacion',type:'single',q:'El racismo estructural significa que...',options:['hay desigualdad profunda en la sociedad','todo el mundo es tratado igual','solo existe en libros'],correct:0,explain:'Correcto: el racismo estructural se ve en la desigualdad persistente.'},{topic:'situacion',type:'single',q:'La falta de oportunidades puede afectar...',options:['la educacion, el trabajo y la participacion social','solo la musica','solo la ropa'],correct:0,explain:'Correcto: la falta de oportunidades afecta a muchas areas de la vida.'},{topic:'situacion',type:'single',q:'Que describe mejor la situacion actual?',options:['todo esta resuelto','hay avances, pero siguen existiendo problemas graves','los pueblos indigenas ya no forman parte de Latinoamerica'],correct:1,explain:'Correcto: hay avances, pero tambien siguen existiendo grandes problemas.'},{topic:'situacion',type:'single',q:'Que areas suelen estar afectadas?',options:['educacion, salud, politica','solo el deporte','solo la literatura'],correct:0,explain:'Correcto: Correcto: la desigualdad afecta varias areas importantes.'},{topic:'situacion',type:'single',q:'La discriminacion puede ser por...',options:['lengua, tradiciones, forma de vivir','el clima solamente','la musica pop'],correct:0,explain:'Correcto: se discrimina a veces por lengua, cultura y tradiciones.'},{topic:'situacion',type:'multi',q:'Selecciona dos problemas actuales de los pueblos indigenas.',options:['discriminacion','pobreza','demasiada representacion politica','exceso de recursos'],correct:[0,1],explain:'Correcto: discriminacion y pobreza son dos problemas centrales.'},{topic:'situacion',type:'typed',q:'Completa: Muchas comunidades sufren pobreza y ______.',answers:['discriminacion'],explain:'Correcto: una pareja muy frecuente es "pobreza y discriminacion".'},
 {topic:'lenguas',type:'single',q:'Muchas lenguas indigenas estan...',options:['en peligro','creciendo sin problemas','prohibidas en todo el mundo'],correct:0,explain:'Correcto: muchas estan amenazadas o en peligro.'},{topic:'lenguas',type:'single',q:'Una razon del peligro es...',options:['que muchas nuevas generaciones ya no las aprenden','que todo el mundo las habla','que tienen demasiados profesores'],correct:0,explain:'Correcto: una causa clave es la falta de transmision a las nuevas generaciones.'},{topic:'lenguas',type:'single',q:'La lengua forma parte de...',options:['la identidad','solo la gramatica','solo la politica'],correct:0,explain:'Correcto: la lengua forma parte de la identidad cultural.'},{topic:'lenguas',type:'single',q:'Si una lengua desaparece...',options:['no cambia nada','se pierde parte de la cultura','se fortalece automaticamente otra'],correct:1,explain:'Correcto: con la lengua se pierde tambien cultura y memoria.'},{topic:'lenguas',type:'single',q:'Una solucion seria...',options:['clases bilingues','ignorar el problema','prohibir otras lenguas'],correct:0,explain:'Correcto: la educacion bilingue es una solucion importante.'},{topic:'lenguas',type:'single',q:'Que significa "transmitir una lengua"?',options:['traducir una lengua','ensenarla a la siguiente generacion','escribirla en un examen'],correct:1,explain:'Correcto: transmitir una lengua significa pasarla a las nuevas generaciones.'},{topic:'lenguas',type:'single',q:'Por que la desaparicion de una lengua es grave?',options:['porque se pierde tambien conocimiento cultural','porque cambian los mapas','porque deja de haber escuela'],correct:0,explain:'Correcto: una lengua lleva tambien memoria y conocimiento cultural.'},{topic:'lenguas',type:'single',q:'Que papel tiene el gobierno?',options:['puede promover y apoyar la conservacion','no puede hacer nada','solo debe observar'],correct:0,explain:'Correcto: el gobierno puede ayudar mediante politicas y apoyo institucional.'},{topic:'lenguas',type:'single',q:'Que medida ayudaria realmente?',options:['usar la lengua tambien en espacios publicos','esconderla mas','no publicarla nunca'],correct:0,explain:'Correcto: la presencia publica da valor y visibilidad a la lengua.'},{topic:'lenguas',type:'single',q:'La herencia linguistica es importante porque...',options:['conecta pasado, identidad y cultura','solo sirve para museos','no tiene valor social'],correct:0,explain:'Correcto: la herencia linguistica conecta historia, identidad y cultura.'},{topic:'lenguas',type:'multi',q:'Por que muchas lenguas indigenas estan en peligro?',options:['porque las nuevas generaciones ya no las aprenden','porque hay falta de apoyo institucional','porque todos quieren aprenderlas','porque el uso publico a veces no se fomenta'],correct:[0,1,3],explain:'Correcto: estas son causas reales del peligro actual.'},{topic:'lenguas',type:'tf',q:'Verdadero o falso: "La desaparicion de una lengua no influye en la cultura".',options:['Verdadero','Falso'],correct:1,explain:'Falso: si eine lengua desaparece, tambien se pierde parte de la cultura.'},{topic:'lenguas',type:'typed',q:'Completa: Muchas lenguas indigenas estan en peligro de ______.',answers:['desaparecer','extincion'],explain:'Correcto: una formulacion habitual es "en peligro de desaparecer".'},{topic:'lenguas',type:'typed',q:'Completa: La lengua forma parte de la ______ cultural.',answers:['identidad'],explain:'Correcto: la lengua forma parte de la identidad cultural.'},
 {topic:'argumentos',type:'single',q:'Un argumento a favor de proteger las lenguas indigenas es...',options:['forman parte de la identidad cultural','no tienen valor','solo complican la comunicacion'],correct:0,explain:'Correcto: la identidad cultural es un argumento central.'},{topic:'argumentos',type:'single',q:'Una dificultad es...',options:['que la proteccion necesita recursos','que ya todos las hablan','que no existen materiales'],correct:0,explain:'Correcto: la conservacion requiere tiempo, dinero y apoyo.'},{topic:'argumentos',type:'single',q:'Una solucion clara seria...',options:['mas educacion bilingue','menos respeto','menos visibilidad'],correct:0,explain:'Correcto: la educacion bilingue puede ayudar mucho.'},{topic:'argumentos',type:'single',q:'Proteger una lengua ayuda a proteger...',options:['cultura y tradicion','solo examenes','solo turismo'],correct:0,explain:'Correcto: lengua, cultura y tradicion estan conectadas.'},{topic:'argumentos',type:'single',q:'Cual es un contraargumento realista?',options:['La conservacion requiere tiempo, dinero y personal.','No vale la pena porque son lenguas feas.','Las culturas no importan.'],correct:0,explain:'Correcto: este es un contraargumento serio y realista.'},{topic:'argumentos',type:'single',q:'Cual es el mejor argumento a favor?',options:['Sin estas lenguas, Latinoamerica perderia diversidad cultural.','Son curiosas.','Son dificiles.'],correct:0,explain:'Correcto: la perdida de diversidad cultural es un argumento fuerte.'},{topic:'argumentos',type:'single',q:'Que solucion es mas completa?',options:['ensenar la lengua, publicar literatura y darle visibilidad publica','solo hablar de ella una vez al ano','no hacer nada'],correct:0,explain:'Correcto: una solucion completa combina educacion, materiales y presencia publica.'},{topic:'argumentos',type:'single',q:'Que medida combate tambien la discriminacion?',options:['dar mas reconocimiento y presencia publica','esconder la lengua','evitar el tema'],correct:0,explain:'Correcto: reconocimiento y visibilidad ayudan tambien contra la discriminacion.'},{topic:'argumentos',type:'multi',q:'Selecciona las soluciones mas realistas para proteger las lenguas indigenas.',options:['clases bilingues','publicar literatura y materiales','mas visibilidad publica','prohibir el espanol'],correct:[0,1,2],explain:'Correcto: estas tres opciones son soluciones coherentes.'},{topic:'argumentos',type:'multi',q:'Selecciona las dos afirmaciones mas fuertes para un comentario sobre la importancia de las lenguas indigenas.',options:['Forman parte de la identidad colectiva','Si desaparecen, se pierde memoria cultural','No importan porque todos hablan espanol','Solo sirven para museos'],correct:[0,1],explain:'Correcto: estos son dos argumentos muy fuertes para un comentario.'},{topic:'argumentos',type:'typed',q:'Completa: Una posible ______ seria fortalecer la educacion bilingue.',answers:['solucion'],explain:'Correcto: "una posible solucion" es una expresion muy util.'},{topic:'argumentos',type:'typed',q:'Completa: Sin estas lenguas, Latinoamerica perderia diversidad ______.',answers:['cultural'],explain:'Correcto: la expresion central es "diversidad cultural".'},
 {topic:'formatos',type:'single',q:'En un resumen debes...',options:['ser neutral','dar tu opinion','copiar frases exactas'],correct:0,explain:'Correcto: el resumen debe ser neutral.'},{topic:'formatos',type:'single',q:'En un comentario debes...',options:['expresar tu opinion','solo resumir','traducir literalmente'],correct:0,explain:'Correcto: el comentario necesita opinion propia.'},{topic:'formatos',type:'single',q:'En una mediacion debes...',options:['explicar lo importante','traducir palabra por palabra','escribir solo en aleman'],correct:0,explain:'Correcto: la mediacion explica lo relevante, no traduce literalmente.'},{topic:'formatos',type:'single',q:'Una buena introduccion para comentario es...',options:['En mi opinion,...','El texto dice exactamente...','Ayer fui al cine...'],correct:0,explain:'Correcto: asi empiezas con tu propia postura.'},{topic:'formatos',type:'single',q:'Una buena introduccion para resumen es...',options:['El texto trata de...','Pienso que...','Me gusta que...'],correct:0,explain:'Correcto: esa es una formula neutral para un resumen.'},{topic:'formatos',type:'single',q:'Que frase encaja mejor en una mediacion?',options:['El texto explica que muchas lenguas indigenas estan en peligro.','Yo creo que el autor esta triste.','La lengua es cool.'],correct:0,explain:'Correcto: la mediacion debe transmitir contenido relevante y claro.'},{topic:'formatos',type:'single',q:'Que error debes evitar en el resumen?',options:['opinion personal','estructura clara','lenguaje neutral'],correct:0,explain:'Correcto: la opinion personal no pertenece al resumen.'},{topic:'formatos',type:'single',q:'Que necesita un comentario?',options:['opinion + argumentos + conclusion','solo tema','solo vocabulario'],correct:0,explain:'Correcto: opinion, argumentos y conclusion son basicos.'},{topic:'formatos',type:'single',q:'Que frase muestra mejor una conclusion?',options:['En conclusion, es necesario proteger esta herencia cultural.','Hola, que tal.','El texto fue escrito.'],correct:0,explain:'Correcto: esa es eine klare conclusion.'},{topic:'formatos',type:'single',q:'Que frase suena mejor para argumentar?',options:['Por un lado..., por otro lado...','Y y y y...','Bueno, fin.'],correct:0,explain:'Correcto: estos conectores organizan un argumento.'},{topic:'formatos',type:'tf',q:'Verdadero o falso: "En una mediacion se debe traducir palabra por palabra".',options:['Verdadero','Falso'],correct:1,explain:'Falso: se debe explicar y simplificar.'},{topic:'formatos',type:'typed',q:'Completa: El texto ______ de la situacion actual de los pueblos indigenas.',answers:['trata'],explain:'Correcto: "El texto trata de..." es una frase muy util.'},{topic:'formatos',type:'typed',q:'Completa: En mi ______, es importante conservar estas lenguas.',answers:['opinion'],explain:'Correcto: "En mi opinion" ist ein guter Beginn.'},{topic:'formatos',type:'typed',q:'Completa: Por un lado..., por otro ______...',answers:['lado'],explain:'Correcto: esta pareja de conectores es muy util.'},
@@ -85,7 +161,7 @@ function uniqueCount(arr){return [...new Set(arr)].length}
 function shuffle(array){const a=array.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
 function normalizeText(t){return t.toLowerCase().trim().replace(/[áàä]/g,'a').replace(/[éèë]/g,'e').replace(/[íìï]/g,'i').replace(/[óòö]/g,'o').replace(/[úùü]/g,'u').replace(/ñ/g,'n').replace(/\s+/g,' ')}
 function computeMastery(){const cardsSeenRatio=Math.min(uniqueCount(state.seenCards)/flashcards.length,1);const cardsKnownRatio=Math.min(uniqueCount(state.knownCards)/flashcards.length,1);const quizRatio=Math.min(state.quizIndex/35,1);const quizAccuracy=state.quizIndex>0?state.quizScore/state.quizIndex:0;const writingRatio=Math.min((state.commentChecks+state.mediationChecks+state.examChecks)/12,1);const vocabAccuracy=state.vocabIndex>0?state.vocabScore/state.vocabIndex:0;const stageBase={basics:.10,content:.25,writing:.45,exam:.65}[state.stage]||.10;const score=(stageBase*.10+cardsSeenRatio*.15+cardsKnownRatio*.15+quizRatio*.15+quizAccuracy*.15+writingRatio*.15+vocabAccuracy*.15)*100;return Math.max(3,Math.round(score))}
-function updateUI(){document.getElementById('stageLabel').textContent=({basics:'Basics',content:'Inhalt',writing:'Schreiben',exam:'Kurz vor der Pruefung'})[state.stage];const mastery=computeMastery();document.getElementById('masteryBar').style.width=mastery+'%';document.getElementById('masteryPercent').textContent=mastery+'%';document.getElementById('flashCount').textContent=uniqueCount(state.seenCards);document.getElementById('flashKnown').textContent=uniqueCount(state.knownCards);document.getElementById('quizScore').textContent=state.quizScore;document.getElementById('quizIndex').textContent=state.quizIndex;document.getElementById('quizStreak').textContent=state.quizStreak;document.getElementById('quizAccuracy').textContent=(state.quizIndex?Math.round((state.quizScore/state.quizIndex)*100):0)+'%';document.getElementById('vocabScore').textContent=state.vocabScore;document.getElementById('vocabIndex').textContent=state.vocabIndex;document.getElementById('vocabAccuracy').textContent=(state.vocabIndex?Math.round((state.vocabScore/state.vocabIndex)*100):0)+'%';document.getElementById('knownBtn').disabled=!state.canMarkKnown;document.getElementById('masteryHint').textContent='Karten '+uniqueCount(state.knownCards)+'/'+flashcards.length+' sicher · Quiz '+state.quizScore+'/'+state.quizIndex+' · Vokabeln '+state.vocabScore+'/'+state.vocabIndex;saveState()}
+function updateUI(){document.getElementById('stageLabel').textContent=({basics:'Basics',content:'Inhalt',writing:'Schreiben',exam:'Kurz vor der Pruefung'})[state.stage];const mastery=computeMastery();document.getElementById('masteryBar').style.width=mastery+'%';document.getElementById('masteryPercent').textContent=mastery+'%';document.getElementById('flashCount').textContent=uniqueCount(state.seenCards);document.getElementById('flashKnown').textContent=uniqueCount(state.knownCards);document.getElementById('quizScore').textContent=state.quizScore;document.getElementById('quizIndex').textContent=state.quizIndex;document.getElementById('quizStreak').textContent=state.quizStreak;document.getElementById('quizAccuracy').textContent=(state.quizIndex?Math.round((state.quizScore/state.quizIndex)*100):0)+'%';document.getElementById('vocabScore').textContent=state.vocabScore;document.getElementById('vocabIndex').textContent=state.vocabIndex;document.getElementById('vocabAccuracy').textContent=(state.vocabIndex?Math.round((state.vocabScore/state.vocabIndex)*100):0)+'%';document.getElementById('vocabSeenUnique').textContent=Object.keys(state.vocabSeen||{}).length;document.getElementById('knownBtn').disabled=!state.canMarkKnown;document.getElementById('masteryHint').textContent='Karten '+uniqueCount(state.knownCards)+'/'+flashcards.length+' sicher · Quiz '+state.quizScore+'/'+state.quizIndex+' · Vokabeln '+state.vocabScore+'/'+state.vocabIndex;saveState()}
 function setStage(stage){state.stage=stage;updateUI()}
 function showPanel(name,el){['theory','arguments','writing'].forEach(id=>{const panel=document.getElementById('panel-'+id);if(panel)panel.classList.add('hidden')});const active=document.getElementById('panel-'+name);if(active)active.classList.remove('hidden');document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));el.classList.add('active')}
 function startFlashcards(){state.flashIndex=0;state.flashFront=true;state.canMarkKnown=false;renderFlashcard();updateUI()}
@@ -96,9 +172,135 @@ function markKnown(){if(!state.canMarkKnown)return;const idx=state.lastKnownCard
 function getVocabPool(){return state.vocabSet==='essential'?essentialVocab:extendedVocab}
 function setVocabSet(v){state.vocabSet=v;nextVocabQuestion();updateUI()}
 function setVocabMode(v){state.vocabMode=v;nextVocabQuestion();updateUI()}
-function nextVocabQuestion(){const pool=getVocabPool();const entry=pool[Math.floor(Math.random()*pool.length)];state.currentVocab=entry;document.getElementById('vocabFeedback').textContent='';document.getElementById('vocabOptions').innerHTML='';document.getElementById('vocabInput').value='';if(state.vocabMode==='mc'){document.getElementById('vocabTypedWrap').classList.add('hidden');document.getElementById('vocabPrompt').textContent='Wie sagt man auf Spanisch: '+entry[0]+' ?';const options=[entry[1]];while(options.length<4){const cand=pool[Math.floor(Math.random()*pool.length)][1];if(!options.includes(cand))options.push(cand)}shuffle(options).forEach(opt=>{const b=document.createElement('button');b.className='secondary';b.textContent=opt;b.onclick=()=>finalizeVocabAnswer(normalizeText(opt)===normalizeText(entry[1]),'Richtig waere: '+entry[1]);document.getElementById('vocabOptions').appendChild(b)})}else{document.getElementById('vocabTypedWrap').classList.remove('hidden');document.getElementById('vocabPrompt').textContent='Schreibe auf Spanisch: '+entry[0]}}
-function checkTypedVocab(){const val=normalizeText(document.getElementById('vocabInput').value);const answer=normalizeText(state.currentVocab[1]);finalizeVocabAnswer(val===answer,'Richtig waere: '+state.currentVocab[1])}
-function finalizeVocabAnswer(ok,explain){state.vocabIndex+=1;if(ok)state.vocabScore+=1;const fb=document.getElementById('vocabFeedback');fb.textContent=(ok?'Richtig. ':'Nicht ganz. ')+explain;fb.className='feedback '+(ok?'good':'warn');updateUI()}
+function ensureVocabStats(item){
+  if(!state.vocabStats[item.id]){
+    state.vocabStats[item.id]={seen:0,mcCorrect:0,typedCorrect:0,wrong:0,unsure:0,sure:0,lastSeen:0,typoAccepted:0};
+  }
+  return state.vocabStats[item.id];
+}
+function levenshtein(a,b){
+  const m=a.length,n=b.length;
+  const dp=Array.from({length:m+1},()=>Array(n+1).fill(0));
+  for(let i=0;i<=m;i++) dp[i][0]=i;
+  for(let j=0;j<=n;j++) dp[0][j]=j;
+  for(let i=1;i<=m;i++){
+    for(let j=1;j<=n;j++){
+      const cost=a[i-1]===b[j-1]?0:1;
+      dp[i][j]=Math.min(dp[i-1][j]+1,dp[i][j-1]+1,dp[i-1][j-1]+cost);
+    }
+  }
+  return dp[m][n];
+}
+function canAcceptTypo(input, answer){
+  if(!input || !answer) return false;
+  const a=normalizeText(input), b=normalizeText(answer);
+  if(a===b) return false;
+  const dist=levenshtein(a,b);
+  return dist<=2 || (b.length>8 && dist<=3);
+}
+function chooseWeightedVocab(){
+  const pool=getVocabPool();
+  const essentialBias=0.78;
+  const targetTier=(Math.random()<essentialBias)?'essential':'extended';
+  let candidatePool=pool.filter(v=>v.tier===targetTier);
+  if(state.vocabSet==='essential') candidatePool=essentialVocab.slice();
+  const unseen=candidatePool.filter(v=>!state.vocabSeen[v.id]);
+  if(unseen.length>0) return unseen[Math.floor(Math.random()*unseen.length)];
+  const weighted=[];
+  candidatePool.forEach(item=>{
+    const s=ensureVocabStats(item);
+    let weight=1;
+    weight += s.wrong*4 + s.unsure*2.5;
+    weight += Math.max(0,3-s.sure);
+    weight += Math.max(0,2-s.typedCorrect)*1.5;
+    weight += s.mcCorrect===0 ? 1.2 : 0;
+    const recencyPenalty=Math.max(0, 3 - ((Date.now()-s.lastSeen)/(1000*60)));
+    weight -= recencyPenalty;
+    if(item.tier==='essential') weight*=1.25;
+    if(s.typedCorrect>=2 && s.sure>=3 && s.wrong===0) weight*=0.35;
+    for(let i=0;i<Math.max(1,Math.round(weight*3));i++) weighted.push(item);
+  });
+  return weighted[Math.floor(Math.random()*weighted.length)] || candidatePool[Math.floor(Math.random()*candidatePool.length)];
+}
+function resetVocabRating(){
+  ['rateSure','rateUnsure','rateWrong'].forEach(id=>{ const el=document.getElementById(id); if(el) el.disabled=true; });
+}
+function enableVocabRating(){
+  ['rateSure','rateUnsure','rateWrong'].forEach(id=>{ const el=document.getElementById(id); if(el) el.disabled=false; });
+}
+function nextVocabQuestion(){
+  const entry=chooseWeightedVocab();
+  state.currentVocab=entry;
+  state.pendingVocabResult=null;
+  ensureVocabStats(entry);
+  document.getElementById('vocabFeedback').textContent='';
+  document.getElementById('vocabOptions').innerHTML='';
+  document.getElementById('vocabInput').value='';
+  document.getElementById('typoBtn').disabled=true;
+  resetVocabRating();
+  if(state.vocabMode==='mc'){
+    document.getElementById('vocabTypedWrap').classList.add('hidden');
+    document.getElementById('vocabPrompt').textContent='Wie sagt man auf Spanisch: '+entry.de+' ?';
+    const pool=getVocabPool();
+    const options=[entry.es];
+    while(options.length<4){
+      const cand=pool[Math.floor(Math.random()*pool.length)].es;
+      if(!options.includes(cand)) options.push(cand);
+    }
+    shuffle(options).forEach(opt=>{
+      const b=document.createElement('button');
+      b.className='secondary';
+      b.textContent=opt;
+      b.onclick=()=>finalizeVocabAnswer(normalizeText(opt)===normalizeText(entry.es),'Richtig waere: '+entry.es,'mc');
+      document.getElementById('vocabOptions').appendChild(b);
+    });
+  }else{
+    document.getElementById('vocabTypedWrap').classList.remove('hidden');
+    document.getElementById('vocabPrompt').textContent='Schreibe auf Spanisch: '+entry.de;
+  }
+}
+function checkTypedVocab(){
+  const val=normalizeText(document.getElementById('vocabInput').value);
+  const answer=normalizeText(state.currentVocab.es);
+  const ok=val===answer;
+  document.getElementById('typoBtn').disabled = !(canAcceptTypo(val, answer));
+  finalizeVocabAnswer(ok,'Richtig waere: '+state.currentVocab.es,'typed');
+}
+function acceptTypo(){
+  if(!state.currentVocab) return;
+  const stats=ensureVocabStats(state.currentVocab);
+  stats.typoAccepted += 1;
+  finalizeVocabAnswer(true,'Als Verschreiber gelten gelassen. Richtig waere: '+state.currentVocab.es,'typed', true);
+}
+function rateVocab(level){
+  if(!state.currentVocab || !state.pendingVocabResult) return;
+  const stats=ensureVocabStats(state.currentVocab);
+  if(level==='sure') stats.sure += 1;
+  if(level==='unsure') stats.unsure += 1;
+  if(level==='wrong') stats.wrong += 1;
+  resetVocabRating();
+  updateUI();
+}
+function finalizeVocabAnswer(ok,explain,mode='mc',acceptedTypo=false){
+  const item=state.currentVocab;
+  const stats=ensureVocabStats(item);
+  state.vocabSeen[item.id]=true;
+  stats.seen += 1;
+  stats.lastSeen = Date.now();
+  state.vocabIndex += 1;
+  if(ok){
+    state.vocabScore += 1;
+    if(mode==='typed') stats.typedCorrect += 1; else stats.mcCorrect += 1;
+  }else{
+    stats.wrong += 1;
+  }
+  state.pendingVocabResult={ok,mode,acceptedTypo};
+  const fb=document.getElementById('vocabFeedback');
+  fb.textContent=(ok?'Richtig. ':'Nicht ganz. ')+explain + (acceptedTypo ? ' (Verschreiber akzeptiert)' : '');
+  fb.className='feedback '+(ok?'good':'warn');
+  enableVocabRating();
+  updateUI();
+}
 function setQuizTopic(v){state.quizTopic=v;resetQuizVisual();loadQuestion()}
 function setQuizAnswerMode(v){state.quizAnswerMode=v;resetQuizVisual();loadQuestion()}
 function getQuizPool(){return quizQuestions.filter(q=>(state.quizTopic==='all'||q.topic===state.quizTopic)&&(state.quizAnswerMode==='all'||q.type===state.quizAnswerMode))}
@@ -125,5 +327,5 @@ function selfCheckExam(){state.examChecks+=1;const txt=document.getElementById('
 function clearExam(){document.getElementById('examAnswer').value='';document.getElementById('examCheck').textContent=''}
 function exportProgress(){const data=JSON.stringify(state,null,2);const blob=new Blob([data],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='spanisch_fortschritt.json';document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url)}
 function importProgress(event){const file=event.target.files&&event.target.files[0];if(!file)return;const reader=new FileReader();reader.onload=function(){try{Object.assign(state,JSON.parse(reader.result));saveState();renderFlashcard();nextVocabQuestion();loadQuestion();updateUI();alert('Fortschritt importiert.')}catch(e){alert('Import fehlgeschlagen. Bitte eine gueltige JSON-Datei verwenden.')}};reader.readAsText(file);event.target.value=''}
-loadState();updateUI();initGuidedWriting();initSentenceBank();renderFlashcard();loadQuestion();loadConnectorTask();nextVocabQuestion();document.getElementById('quizTopic').value=state.quizTopic;document.getElementById('quizAnswerMode').value=state.quizAnswerMode;document.getElementById('vocabSet').value=state.vocabSet;document.getElementById('vocabMode').value=state.vocabMode;
+loadState();updateUI();initGuidedWriting();initSentenceBank();renderFlashcard();loadQuestion();loadConnectorTask();nextVocabQuestion();document.getElementById('quizTopic').value=state.quizTopic;document.getElementById('quizAnswerMode').value=state.quizAnswerMode;document.getElementById('vocabSet').value=state.vocabSet;document.getElementById('vocabMode').value=state.vocabMode;document.getElementById('typoBtn').disabled=true;resetVocabRating();
 </script></body></html>
