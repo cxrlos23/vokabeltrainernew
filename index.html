@@ -328,18 +328,4 @@ function clearExam(){document.getElementById('examAnswer').value='';document.get
 function exportProgress(){const data=JSON.stringify(state,null,2);const blob=new Blob([data],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='spanisch_fortschritt.json';document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url)}
 function importProgress(event){const file=event.target.files&&event.target.files[0];if(!file)return;const reader=new FileReader();reader.onload=function(){try{Object.assign(state,JSON.parse(reader.result));saveState();renderFlashcard();nextVocabQuestion();loadQuestion();updateUI();alert('Fortschritt importiert.')}catch(e){alert('Import fehlgeschlagen. Bitte eine gueltige JSON-Datei verwenden.')}};reader.readAsText(file);event.target.value=''}
 loadState();updateUI();initGuidedWriting();initSentenceBank();renderFlashcard();loadQuestion();loadConnectorTask();nextVocabQuestion();document.getElementById('quizTopic').value=state.quizTopic;document.getElementById('quizAnswerMode').value=state.quizAnswerMode;document.getElementById('vocabSet').value=state.vocabSet;document.getElementById('vocabMode').value=state.vocabMode;document.getElementById('typoBtn').disabled=true;resetVocabRating();
-  document.getElementById('vocabInput').addEventListener('keydown', function(e) {
-  if (e.key === 'Enter') {
-    e.preventDefault();
-
-    // Wenn noch keine Antwort geprüft wurde → prüfen
-    if (!state.pendingVocabResult) {
-      checkTypedVocab();
-    } 
-    // Wenn schon geprüft wurde → nächste Vokabel
-    else {
-      nextVocabQuestion();
-    }
-  }
-});
 </script></body></html>
